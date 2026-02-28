@@ -158,10 +158,10 @@ with tab2:
                 user_text = data
 
             elif files is not None and data.strip() == "":
-                user_text = files.read().decode("utf-8")
+                user_text = files.read().decode("utf-8",errors="igonre")
 
             elif files is not None and data.strip() != "":
-                user_text = data + "\n" + files.read().decode("utf-8")
+                user_text = data + "\n" + files.read().decode("utf-8",errors="ignore")
 
             if not user_text:
                 st.warning("Please enter text or upload a file.")
@@ -309,3 +309,4 @@ with tab3:
             with st.container(border=True):
 
                 st.text(swasthvika)
+
