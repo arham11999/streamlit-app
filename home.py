@@ -72,9 +72,9 @@ with tab1:
         if data != "" and files is None:
             user_text = data
         elif files is not None and data == "":
-            user_text = files.read().decode("utf-8",errors="ignore")
+            user_text = files.read()
         elif files is not None and data != "":
-            user_text = data + "\n" + files.read().decode("utf-8",errors="ignore")
+            user_text = data + "\n" + files.read()
 
         try:
             if button and user_text:
@@ -158,10 +158,10 @@ with tab2:
                 user_text = data
 
             elif files is not None and data.strip() == "":
-                user_text = files.read().decode("utf-8",errors="igonre")
+                user_text = files.read()
 
             elif files is not None and data.strip() != "":
-                user_text = data + "\n" + files.read().decode("utf-8",errors="ignore")
+                user_text = data + "\n" + files.read()
 
             if not user_text:
                 st.warning("Please enter text or upload a file.")
@@ -309,4 +309,5 @@ with tab3:
             with st.container(border=True):
 
                 st.text(swasthvika)
+
 
