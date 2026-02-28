@@ -72,9 +72,9 @@ with tab1:
         if data != "" and files is None:
             user_text = data
         elif files is not None and data == "":
-            user_text = files.read().decode("utf-8")
+            user_text = files.read().decode("utf-8",errors="ignore")
         elif files is not None and data != "":
-            user_text = data + "\n" + files.read().decode("utf-8")
+            user_text = data + "\n" + files.read().decode("utf-8",errors="ignore")
 
         try:
             if button and user_text:
@@ -307,4 +307,5 @@ with tab3:
         with col4:
             st.header("Swasthvika")
             with st.container(border=True):
+
                 st.text(swasthvika)
