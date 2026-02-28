@@ -72,10 +72,10 @@ if generate_button:
         user_text = data
 
     elif files is not None and data.strip() == "":
-        user_text = files.read().decode("utf-8")
+        user_text = files.read().decode("utf-8",errors="ignore")
 
     elif files is not None and data.strip() != "":
-        user_text = data + "\n" + files.read().decode("utf-8")
+        user_text = data + "\n" + files.read().decode("utf-8",errors="ignore")
 
     if not user_text:
         st.warning("Please enter text or upload a file.")
@@ -148,4 +148,5 @@ if check_button:
                 st.success("THANK YOU")
 
         except Exception as e:
+
             st.error(f"API Error: {e}")
