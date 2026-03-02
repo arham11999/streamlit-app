@@ -69,7 +69,7 @@ He is a motivated and enthusiastic developer with a strong interest in software 
 Role:Front-end(HTML,CSS,Python)
 """
 Dhanya_shree="""
-Name:Gopinigari Dhanya Shree
+Name:Gopinigari Dhanya Sree
 
 Roll no:614
 
@@ -104,10 +104,11 @@ with col2:
     with st.container(border=True):
         st.text(srinath)
 with col3:
-    st.subheader("DHANYA SHREE")
+    st.subheader("DHANYA SREE")
     with st.container(border=True):
         st.text(Dhanya_shree)
 with col4:
     st.subheader("Swasthvika")
     with st.container(border=True):
+
         st.text(swasthvika)
