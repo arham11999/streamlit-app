@@ -259,7 +259,7 @@ with tab3:
         Role:Front-end(Python,HTML,CSS)
         """
         Dhanya_shree="""
-        Name:Gopinigari Dhanya Shree
+        Name:Gopinigari Dhanyasree
 
         Roll no:614
 
@@ -299,7 +299,7 @@ with tab3:
 
 
         with col3:
-            st.header("DHANYA_SHREE")
+            st.header("DHANYASREE")
             with st.container(border=True):
                 st.text(Dhanya_shree)
 
@@ -309,6 +309,7 @@ with tab3:
             with st.container(border=True):
 
                 st.text(swasthvika)
+
 
 
 
